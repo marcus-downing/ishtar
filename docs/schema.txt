@@ -1,0 +1,88 @@
+System settings
+ # Key
+ - Value
+
+Product
+Grouping for translatable entries
+ # ID
+ - Name
+ > Product group
+
+Product group
+Just for organisation
+ # ID
+ - Name
+
+Language
+A translation target
+ # code (eg, "en-GB")
+ - Name (set from data)
+
+Language settings
+ #> Language
+ #> Key
+ - Value
+
+User
+A person's login account
+ # ID
+ - Name
+ - Email address
+ - Login
+ - PasswordHash
+ - LoginSecret
+ - APIKey
+ - Is administrator?
+
+User metadata
+ #> User
+ # Key
+ - Value
+
+User role
+ > User
+ > Language
+ - Role
+   - Team leader
+   - Moderator
+
+Entry set
+A group of entries imported together
+ # ID
+ > Product
+ > Language
+ - Date
+ > Imported by user
+
+Entry set metadata
+ #> Entry set
+ # Key
+ - Value
+
+Entry
+ # Hash
+ - Text
+ > Entry set
+
+Entry metadata
+ #> Entry
+ # Key
+ - Value
+
+Translation
+ # Hash
+ > Entry
+ > User
+ - Translation text
+
+Translation vote
+ #> Translation
+ #> User
+ - Upvote/downvote
+
+Translation comment
+ # ID
+ > Translation
+ > User
+ - Date/time
+ - Comment

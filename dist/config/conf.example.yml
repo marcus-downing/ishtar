@@ -1,0 +1,11 @@
+---
+general:
+  name: Ishtar
+
+database:
+  server: sqlite
+  filename: database.sqlite
+
+email:
+  server: localhost
+  

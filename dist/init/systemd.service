@@ -1,0 +1,14 @@
+[Unit]
+Description=Ishtar
+After=network.target
+
+[Service]
+User=www-data
+Restart=always
+Type=simple
+WorkingDirectory=/opt/ishtar
+ExecStart=/opt/ishtar/bin/ishtar-linux64
+
+[Install]
+WantedBy=default.target
+
